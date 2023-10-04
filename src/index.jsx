@@ -12,7 +12,7 @@ import {IdContextProvider}  from './components/IdContext';
 
 
 const router = createBrowserRouter([
-  {path: "/",
+  {path: "/react-globe",
     element: <App/>,
     errorElement: <ErrorPage /> },
     {path:"main",element:<MainNav/>,
