@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import ErrorPage from'./components/earth/errorRoute'
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Details from './components/details';
 import MainNav from './components/mainnav';
 import {IdContextProvider}  from './components/IdContext';
@@ -12,7 +12,7 @@ import {IdContextProvider}  from './components/IdContext';
 
 
 const router = createBrowserRouter([
-  {path: "/react-globe",
+  {path: "/",
     element: <App/>,
     errorElement: <ErrorPage /> },
     {path:"main",element:<MainNav/>,
