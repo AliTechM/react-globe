@@ -1,0 +1,122 @@
+{
+  "Pacific Ocean": {
+    "id": 1,
+    "Area": "165  sq. km",
+    "MaxLength": "30,578 km",
+    "MaxWidth": "19,300 km",
+    "lat": 0,
+    "lng": -160,
+    "type": "ocean",
+    "text": "Pacific Ocean"
+  },
+  "Atlantic Ocean": {
+    "id": 2,
+    "Area": "106 sq. km",
+    "MaxLength": "25,750 km",
+    "MaxWidth": "8,047 km",
+    "lat": 0,
+    "lng": -30,
+    "type": "ocean",
+    "text": "Atlantic Ocean"
+  },
+  "Indian Ocean": {
+    "id": 3,
+    "Area": "70  sq. km",
+    "MaxLength": "16,093 km",
+    "MaxWidth": "6,437 km",
+    "lat": -20,
+    "lng": 70,
+    "type": "ocean",
+    "text": "Indian Ocean"
+  },
+  "Arctic Ocean": {
+    "id": 4,
+    "Area": "14 sq. km",
+    "MaxLength": "8,690 km",
+    "MaxWidth": "4,506 km",
+    "lat": 80,
+    "lng": 0,
+    "type": "ocean",
+    "text": "Arctic Ocean"
+  },
+  "Southern Ocean": {
+    "id": 5,
+    "Area": "20  sq. km",
+    "MaxLength": "17,702 km",
+    "MaxWidth": "3,219 km",
+    "lat": -60,
+    "lng": 0,
+    "type": "ocean",
+    "text": "Southern Ocean"
+  },
+  "Asia": {
+    "id": 6,
+    "Population": "4.6 B",
+    "Area": "44 m sq km",
+    "PopulationDensity": "103 people/sq km",
+    "GDP": "310 T",
+    "lat": 50,
+    "lng": 90,
+    "text": "Asia"
+  },
+  "Africa": {
+    "id": 7,
+    "Population": "123 B",
+    "Area": "30 m sq km",
+    "PopulationDensity": "40.4 people/sq km",
+    "GDP": "$261 T",
+    "text": "Africa",
+    "lat": 0,
+    "lng": 20
+  },
+  "Europe": {
+    "id": 8,
+    "Population": "741 B",
+    "Area": "10 m sq km",
+    "PopulationDensity": "72.9 people/sq km",
+    "GDP": "$234 T",
+    "lat": 50,
+    "lng": 20,
+    "text": "Europe"
+  },
+  "North America": {
+    "id": 9,
+    "Population": "579 B",
+    "Area": "24 m sq km",
+    "PopulationDensity": "23.4 people/sq km",
+    "GDP": "$26.4 T",
+    "lat": 45,
+    "lng": -100,
+    "text": "North America"
+  },
+  "South America": {
+    "id": 10,
+    "Population": "4225 B",
+    "Area": "17 m sq km",
+    "PopulationDensity": "23.7 people/sq km",
+    "GDP": "5.45 T",
+    "lat": -15,
+    "lng": -60,
+    "text": "South America"
+  },
+  "Australia": {
+    "id": 11,
+    "Population": "25 B",
+    "Area": "8 m sq km",
+    "PopulationDensity": "3.3 people/sq km",
+    "GDP": "$1.5 T",
+    "lat": -25,
+    "lng": 135,
+    "text": "Australia"
+  },
+  "Antarctica": {
+    "id": 12,
+    "Population": "0.00001 B",
+    "Area": "14 m sq km",
+    "PopulationDensity": "0.00007 people/sq km",
+    "GDP": "$0",
+    "lat": -80,
+    "lng": 0,
+    "text": "Antarctica"
+  }
+}
