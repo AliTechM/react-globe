@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     {path:"/react-globe/main",element:<MainNav/>,
     children:[
       {
-        path:"details/:navid?",element:<Details/>  
+        path:"details/:navid",element:<Details/>  
       }
         ]
   }

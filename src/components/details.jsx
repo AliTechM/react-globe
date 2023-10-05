@@ -11,22 +11,24 @@ export default function Details() {
   
    useEffect(()=>{
    
-     if(params.navid === 'undefined'){
-      const paramVal= localStorage.getItem('paramValue');
-      const simpleData=fileData[paramVal];
-      setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
-      setLoading(true);
-      callApi(paramVal)
-     }
-     else{
+    //  if(params.navid === 'undefined'){
+    //   const paramVal= localStorage.getItem('paramValue');
+    //   const simpleData=fileData[paramVal];
+    //   setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
+    //   setLoading(true);
+    //   callApi(paramVal)
+    //  }
+    //  else{
      
       const paramVal=params.navid;
+      console.log(params.navid);
       localStorage.setItem('paramValue',paramVal);
       const simpleData=fileData[paramVal];
       setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
       setLoading(true);
       callApi(paramVal)
-     }
+    //  }
+    
       
     
   },[params.navid]);  
