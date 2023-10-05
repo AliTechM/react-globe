@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   {path: "/react-globe",
     element: <App/>,
     errorElement: <ErrorPage /> },
-    {path:"/main",element:<MainNav/>,
+    {path:"/react-globe/main",element:<MainNav/>,
     children:[
       {
         path:"details/:navid?",element:<Details/>  

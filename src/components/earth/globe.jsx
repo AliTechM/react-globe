@@ -15,7 +15,7 @@ const GlobeComponent = () => {
  
   const handlelinkClick = () => {
       updateTargetName(popupContent1.text);
-      navigate("/main");
+      navigate("/react-globe/main");
    
   };
   // get data from JSON and use it in Globe 
