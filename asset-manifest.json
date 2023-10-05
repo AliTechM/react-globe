@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-globe/static/css/main.55d0627a.css",
-    "main.js": "/react-globe/static/js/main.6673de88.js",
+    "main.css": "/react-globe/static/css/main.6d10293e.css",
+    "main.js": "/react-globe/static/js/main.e49f3a75.js",
     "static/js/787.0839f4e5.chunk.js": "/react-globe/static/js/787.0839f4e5.chunk.js",
     "static/media/combined.jpg": "/react-globe/static/media/combined.55ddab949490d0629210.jpg",
     "static/media/1.jpg": "/react-globe/static/media/1.7deee995d548fe65faff.jpg",
     "static/media/night-sky.png": "/react-globe/static/media/night-sky.51b096abd273b7ddc491.png",
     "static/media/2.png": "/react-globe/static/media/2.739e278bf846bb7b50d5.png",
     "index.html": "/react-globe/index.html",
-    "main.55d0627a.css.map": "/react-globe/static/css/main.55d0627a.css.map",
-    "main.6673de88.js.map": "/react-globe/static/js/main.6673de88.js.map",
+    "main.6d10293e.css.map": "/react-globe/static/css/main.6d10293e.css.map",
+    "main.e49f3a75.js.map": "/react-globe/static/js/main.e49f3a75.js.map",
     "787.0839f4e5.chunk.js.map": "/react-globe/static/js/787.0839f4e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55d0627a.css",
-    "static/js/main.6673de88.js"
+    "static/css/main.6d10293e.css",
+    "static/js/main.e49f3a75.js"
   ]
 }
