@@ -1,10 +1,10 @@
-import React, { useState, useRef ,useEffect} from 'react';
+import React, { useState, useRef } from 'react';
 import Globe from 'react-globe.gl';
 import immmg from '../../assets/textures/combined.jpg'
 import img1 from "../../assets/textures/1.jpg"
 import img2 from "../../assets/textures/2.png"
 import img3 from "../../assets/textures/night-sky.png"
-import { Link ,useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import infos from './infos.json'
 import { useIdContext } from '../IdContext';
 
