@@ -49,7 +49,7 @@ export default function Details() {
     return (
       <>    
         <div className="container" >        
-        <h3>{localStorage.getItem('paramValue')}</h3>
+        <h1>{localStorage.getItem('paramValue')}</h1>
            {preDtata.map(([key,val])=>(
            <div className="item" key={key}>
            <div className="key">{key}</div>

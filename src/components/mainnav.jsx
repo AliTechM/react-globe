@@ -45,11 +45,11 @@ export default function MainNav() {
     <div className={isOpen ? 'popup-page' : "popup-page close-popup"}>
       <div id="sidebar" className="page">
        <div className="sideTop">
-        <Link  to="/">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#2a68f5" width="18px"><path d="M11.62 3.81 7.43 8l4.19 4.19-1.53 1.52L4.38 8l5.71-5.71 1.53 1.52z"/></svg>
+        <Link  to="/react-globe">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#2a68f5" width="25px"><path d="M11.62 3.81 7.43 8l4.19 4.19-1.53 1.52L4.38 8l5.71-5.71 1.53 1.52z"/></svg>
 
         </Link>
-        <div>
+       
           <form id="search-form" role="search" onSubmit={ handleSubmit }>
           
             <input
@@ -64,7 +64,7 @@ export default function MainNav() {
               hidden={true}
             />
           </form>
-          </div>
+          
         </div>
 
         <nav>

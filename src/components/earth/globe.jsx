@@ -81,7 +81,7 @@ const GlobeComponent = () => {
     {popupContent1 && (
       <div className={isOpen ? "popupdrop" : ""} onClick={handleClosePopup}>
         <div className={isOpen ? 'popup' : "popup close-popup"} >
-          <h6>{popupContent1.text}</h6>
+          <h2>{popupContent1.text}</h2>
           {popupContent1.type ? (
             <>
               <table>
