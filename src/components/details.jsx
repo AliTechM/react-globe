@@ -1,6 +1,6 @@
 import React ,{ useState, useEffect } from 'react';
 import fileData from './earth/infos.json'
-import {useParams ,} from "react-router-dom";
+import {useParams ,useNavigate } from "react-router-dom";
 
 export default function Details() {
  
@@ -8,27 +8,27 @@ export default function Details() {
   const [preDtata,setPreData]=useState([]);
   const [loading, setLoading] = useState(true);
   const params= useParams();
-  
+  const navigate=useNavigate();
    useEffect(()=>{
    
-    //  if(params.navid === 'undefined'){
-    //   const paramVal= localStorage.getItem('paramValue');
-    //   const simpleData=fileData[paramVal];
-    //   setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
-    //   setLoading(true);
-    //   callApi(paramVal)
-    //  }
-    //  else{
+     if(params.navid === 'undefined' || !params.navid){
+      const paramVal= localStorage.getItem('paramValue');
+      const simpleData=fileData[paramVal];
+      setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
+      navigate(`../details/${paramVal}`);
+      setLoading(true);
+      callApi(paramVal)
+     }
+     else{
      
       const paramVal=params.navid;
-      console.log(params.navid);
       localStorage.setItem('paramValue',paramVal);
       const simpleData=fileData[paramVal];
       setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
       setLoading(true);
       callApi(paramVal)
-    //  }
-    
+      }
+   
       
     
   },[params.navid]);  
