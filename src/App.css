@@ -9,7 +9,7 @@
 .popup {
   position: fixed;
   top: 35%;
-  left: 22%;
+  left: 20%;
   transform: translate(-50%, -50%);
   width: 40vw;
   z-index: 101;
@@ -18,7 +18,17 @@
   animation-direction: normal;
   background-color: #e5e5e5;
   font-family: sans-serif;
-  height: 300px;
+ 
+}
+.dialogLink {  
+  font-size: 2.2vw;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 3px;
+  width: 25%;
+  text-align: center;
+  border: 0.5px solid transparent;
+  cursor: pointer;
 }
 .popup-page {
   
@@ -26,6 +36,7 @@
   animation-duration: .8s;
   animation-direction: normal;
   }
+  
 .close-popup {
   opacity: 0;
    display: none;
@@ -33,6 +44,7 @@
 .popup h2{
   width: 95%;
   margin: 15px auto;
+  font-size: 3vw;
 }
 .popup li{
   font-size: 8px;
@@ -85,7 +97,7 @@
       }
 
 table {
-  font-size: 1.5rem;
+  font-size: 2vw;
   width: 95%;
   border-collapse: collapse;
   margin: 5px auto;
@@ -95,16 +107,7 @@ td {
   border: 0.4px solid #8b8b8b;
   height: 22px;
 }
-.dialogLink {  
-  font-size: 1.5rem;
-  text-decoration: none;
-  border-radius: 7px;
-  padding: 3px;
-  width: 14rem;
-  text-align: center;
-  border: 0.5px solid transparent;
-  cursor: pointer;
-}
+
 .primary{
   color: #e3e3e3;
   background-color: #0074d9;
@@ -365,3 +368,23 @@ i {
 }
 
 
+@media only screen and (max-width: 500px) {
+  .popup {   
+    left: 10%;
+    transform: none;
+    width: 75vw;  
+  }
+  .item,#sidebar nav a,table,.container p {
+    font-size: 3vw;
+  }
+  #sidebar > div form input[type="search"],input, button {
+    font-size: 2.3vw;
+  }
+  .container h1 {
+    font-size: 7vw;
+  }
+  .item{
+    height: 8vw;
+  }
+ 
+}

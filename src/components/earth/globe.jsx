@@ -55,7 +55,7 @@ const GlobeComponent = () => {
     const numbers = str.match(/\d+/g);
     const combinedNumber = numbers ? Number(numbers.join('')) : null;
     const intValue = Math.floor(combinedNumber);
-    const result = (intValue * 3) / 165;
+    const result = (intValue * 0.5) / 165;
     return result < 1 ? result + 1 : result;
   }
 
@@ -67,13 +67,13 @@ const GlobeComponent = () => {
       backgroundImageUrl={img3}
       labelsData={mapData}
       labelIncludeDot={true}
-      labelDotRadius={(d => getNumbers(d.Area))}
-      labelColor={() => 'rgba(255, 165, 0, 0.75)'}
-      labelResolution={2}
+      // labelDotRadius={(d => getNumbers(d.Area))}
+      labelDotRadius={0.8}
+      labelColor={() => '#FFFFFF'}
+      labelResolution={7}
       animateIn={true}
-      globeAltitudeScale={0.2}
       onLabelClick={handleLabelClickAsync}
-      labelSize={1.5}
+      labelSize={1.3}
       autoRotate={true}
       autoRotateSpeed={2}
 
