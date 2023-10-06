@@ -4,19 +4,17 @@ import immmg from '../../assets/textures/combined.jpg'
 import img1 from "../../assets/textures/1.jpg"
 import img2 from "../../assets/textures/2.png"
 import img3 from "../../assets/textures/night-sky.png"
-import { useNavigate} from "react-router-dom";
+import { Link } from "react-router-dom";
 import infos from './infos.json'
 import { useIdContext } from '../IdContext';
 
 const GlobeComponent = () => {
-   const globeRef = useRef(null);
-  const navigate = useNavigate();
+  const globeRef = useRef(null);
   const { updateTargetName, } = useIdContext();
- 
+
   const handlelinkClick = () => {
-      updateTargetName(popupContent1.text);
-      navigate("/react-globe/main");
-   
+    updateTargetName(popupContent1.text);
+
   };
   // get data from JSON and use it in Globe 
   const mapData = [];
@@ -33,11 +31,12 @@ const GlobeComponent = () => {
   };
 
   const handleClosePopup = () => {
-      setIsOpen(false);    
+    setIsOpen(false);
   };
- 
+
   // async function after the label is clicked
   const handleLabelClickAsync = async (label) => {
+    console.log(label);
     const newCameraPosition = [label.lat, label.lng, 3.3];
     await new Promise((resolve) => {
       globeRef.current.pointOfView({ lat: newCameraPosition[0], lng: newCameraPosition[1], altitude: newCameraPosition[2] }, [900]);
@@ -50,7 +49,7 @@ const GlobeComponent = () => {
     setPopupContent1(label);
     handleOpenPopup();
   }
- 
+
   const getNumbers = (str) => {
     const numbers = str.match(/\d+/g);
     const combinedNumber = numbers ? Number(numbers.join('')) : null;
@@ -59,8 +58,8 @@ const GlobeComponent = () => {
     return result < 1 ? result + 1 : result;
   }
 
-  return <div   style={{ width: '100vw', height: '100vh', position: 'relative' }}>
-    <Globe 
+  return <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+    <Globe
       ref={globeRef}
       globeImageUrl={img1}
       bumpImageUrl={img2}
@@ -94,16 +93,16 @@ const GlobeComponent = () => {
                 <tbody>
                   <tr>
                     <td>Area:</td>
-                    <td>{popupContent1.Area.toString()}</td>
+                    <td>{popupContent1.Area}</td>
                   </tr>
                   <tr>
                     <td>Max length:</td>
-                    <td>{popupContent1.MaxLength.toString()}</td>
+                    <td>{popupContent1.MaxLength}</td>
 
                   </tr>
                   <tr>
                     <td>Max width:</td>
-                    <td>{popupContent1.MaxWidth.toString()}</td>
+                    <td>{popupContent1.MaxWidth}</td>
                   </tr>
                 </tbody>
                 <tfoot></tfoot>
@@ -121,19 +120,19 @@ const GlobeComponent = () => {
                 <tbody>
                   <tr>
                     <td>Population:</td>
-                    <td>{popupContent1.Population.toString()} </td>
+                    <td>{popupContent1.Population} </td>
                   </tr>
                   <tr>
                     <td>Area:</td>
-                    <td>{popupContent1.Area.toString()} </td>
+                    <td>{popupContent1.Area} </td>
                   </tr>
                   <tr>
                     <td>PopulationDensity:</td>
-                    <td>{popupContent1.PopulationDensity.toString()} </td>
+                    <td>{popupContent1.PopulationDensity} </td>
                   </tr>
                   <tr>
                     <td>GDP:</td>
-                    <td>{popupContent1.GDP.toString()} </td>
+                    <td>{popupContent1.GDP} </td>
                   </tr>
                 </tbody>
                 <tfoot>
@@ -143,7 +142,7 @@ const GlobeComponent = () => {
           )}
           <div className='buttonContainer'>
             <button className='dialogLink' onClick={handleClosePopup}>Cancel</button>
-            <button  onClick={() => handlelinkClick()} className='dialogLink primary' >More</button>
+            <Link to={`/react-globe/main`} onClick={() => handlelinkClick()} className='dialogLink primary'>  more  </Link>
           </div>
         </div>
       </div>
