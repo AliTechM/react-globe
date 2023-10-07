@@ -12,7 +12,7 @@ export default function MainNav() {
   const [filteredNavLinks, setFilteredNavLinks] = useState(allNavLinks);
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    navgate(`details/${targetName}`);
+    navgate(`${targetName}`);
     setIsOpen(true);
     fillAllNav(); // Populate allNavLinks when the component mounts
   },[]); 
@@ -72,7 +72,7 @@ export default function MainNav() {
           {filteredNavLinks.map((item, index) => (
             <NavLink
               key={index}
-              to={`details/${item}`}
+              to={`${item}`}
               className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : ""
               }>

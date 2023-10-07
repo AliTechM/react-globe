@@ -15,7 +15,7 @@ export default function Details() {
       const paramVal= localStorage.getItem('paramValue');
       const simpleData=fileData[paramVal];
       setPreData(Object.entries(simpleData).filter(([key]) => key !== 'text' && key !== 'id'&&  key !== 'type'));
-      navigate(`../details/${paramVal}`);
+      navigate(`../${paramVal}`);
       setLoading(true);
       callApi(paramVal)
      }

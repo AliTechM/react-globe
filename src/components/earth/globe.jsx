@@ -142,7 +142,7 @@ const GlobeComponent = () => {
           )}
           <div className='buttonContainer'>
             <button className='dialogLink' onClick={handleClosePopup}>Cancel</button>
-            <Link to={`/react-globe/main`} onClick={() => handlelinkClick()} className='dialogLink primary'>  more  </Link>
+            <Link to={`/react-globe/main`} onClick={() => handlelinkClick()} className='dialogLink primary'> more </Link>
           </div>
         </div>
       </div>
